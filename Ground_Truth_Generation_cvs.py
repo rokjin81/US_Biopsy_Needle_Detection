@@ -32,8 +32,8 @@ def calculate_x_tip_y_tip_angle(T, img_width, img_height):
     ])
     
     # Corner points of ultrasound image in world coordinates
-    x_min, y_min = -28.7970008850097, -6.87299919128417
-    x_max, y_max = 24.7079975754022, 50.4599991589784
+    x_min, y_min = -28.797000885009766, -6.872999191284178
+    x_max, y_max = 28.535997465252876, 46.631999269127846
 
     k_1 = -1 * img_width / (x_max - x_min)
     k_2 = img_height / (y_max - y_min)
