@@ -62,7 +62,7 @@ def calculate_r_encode_l_encode(T):
     return r_encode, l_encode
 
 # Main code
-mha_file = "./OTS_Data_0913.seq.mha"
+mha_file = "./OTS_Data_Veri_1209.seq.mha"
 start_frame = int(input("Enter the first frame index: "))
 end_frame = int(input("Enter the last frame index: "))
 
