@@ -41,7 +41,7 @@ for image_file in image_files:
             boxes = result.boxes.cpu().numpy()  # Convert bounding box info to numpy array
             for box in boxes:
                 class_id = int(box.cls)  # Class ID of the detected object
-                if class_id == 1:  # Assuming class ID of 'needle_us' is 1
+                if class_id == 1:  # Class ID of 'needle_us' is 1
                     # Get coordinates of the bounding box (x_min, y_min, x_max, y_max)
                     x_min, y_min, x_max, y_max = map(int, box.xyxy[0])
 
