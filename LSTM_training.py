@@ -8,14 +8,14 @@ import csv
 
 # Define the LSTM network
 class LSTMNetwork(nn.Module):
-    def __init__(self, input_size=5, hidden_size=256, output_size=3, num_layers=1):
+    def __init__(self, input_size=5, hidden_size=128, output_size=3, num_layers=1):
         super(LSTMNetwork, self).__init__()
         self.lstm = nn.LSTM(input_size, hidden_size, num_layers, batch_first=True)
         self.fc = nn.Sequential(
-            nn.Linear(hidden_size, 256),
+            nn.Linear(hidden_size, 128),
             nn.ReLU(),
             nn.Dropout(0.5),  # Dropout
-            nn.Linear(256, output_size)
+            nn.Linear(128, output_size)
         )
     
     def forward(self, x):
