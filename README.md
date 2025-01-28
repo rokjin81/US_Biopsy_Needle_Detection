@@ -15,7 +15,7 @@ This project proposes a precise needle insertion assistant device and a multimod
 3. **Sythetic_Encoder_Generation_csv.py**  
    Generates synthetic encoder data for the assistive device from an MHA file containing OTS data recorded in 3D Slicer, and saves it as a CSV file.  
    - Specify the `mha_file` as the path and file name of the MHA file.
-   - Specify the 'transform_key' as the structure of the MHA file.
+   - Specify the `transform_key` as the structure of the MHA file.
 
 5. **Input_Generation_LSTM.py**  
    Combines image processing results from the YOLOv8 model with encoder data from the assistive device to generate input data for the LSTM model, and saves it as a CSV file.  
@@ -28,7 +28,7 @@ This project proposes a precise needle insertion assistant device and a multimod
    - Input the results of pivot calibration and pointer calibration from 3D Slicer into the constants `ProbeToImage` and `NeedleTipToNeedle` transformation matrices in the "Constants Transformation Matrix from Calibration in 3D Slicer".  
    - Input the coordinate information of the aligned ultrasound image in 3D Slicer space into the "Corner points of ultrasound image in world coordinates".  
    - Specify the `mha_file` as the path and file name of the MHA file.
-   - Specify the 'transform_key' as the structure of the MHA file.
+   - Specify the `transform_key` as the structure of the MHA file.
 
 7. **LSTM_training.py**  
    Trains the LSTM model using time-series data combining image data processed through YOLO and encoder values from the assistive device.  
