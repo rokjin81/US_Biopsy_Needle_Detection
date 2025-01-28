@@ -18,7 +18,7 @@ def load_transform_matrix_from_mha(mha_file_path, slice_index):
     mha_image = sitk.ReadImage(mha_file_path)
     
     # Create the metadata key based on the slice index
-    transform_key = f"Seq_Frame{slice_index:04d}_OTS_Data_0913Transform"
+    transform_key = f"Seq_Frame{slice_index:04d}_OTS_Data_1209Transform"
     
     # Check if the key exists in the metadata
     if mha_image.HasMetaDataKey(transform_key):
