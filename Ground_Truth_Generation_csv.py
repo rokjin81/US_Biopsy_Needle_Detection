@@ -71,7 +71,7 @@ def load_transform_matrix_from_mha(mha_image, slice_index):
         np.ndarray: The transformation matrix as a 4x4 numpy array, or None if not found.
     """
     # Create the metadata key based on the slice index
-    transform_key = f"Seq_Frame{slice_index:04d}_OTS_Data_0913Transform"
+    transform_key = f"Seq_Frame{slice_index:04d}_OTS_Data_1209Transform"
     
     # Check if the key exists in the metadata
     if mha_image.HasMetaDataKey(transform_key):
