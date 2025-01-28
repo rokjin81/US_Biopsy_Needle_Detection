@@ -86,7 +86,7 @@ def load_transform_matrix_from_mha(mha_image, slice_index):
         return None
 
 # Main code
-mha_file = "E:/Project/US Biopsy Robot/Code_Exp/OTS_Data_0913.seq.mha"
+mha_file = "./OTS_Data_0913.seq.mha"
 start_frame = int(input("Enter the first frame index: "))
 end_frame = int(input("Enter the last frame index: "))
 img_width, img_height = 660, 616  # Image dimensions
